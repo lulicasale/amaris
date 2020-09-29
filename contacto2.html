@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css"> 
+	<meta name="description" content="venta de velas aromaticas y elementos de decoracion. Contacto via mail: amarisdeco@gmail.com. Hablemos por whatsapp: 1555555555. DM al instagram: @amaris.deco">
+    <meta name="keywords" content="amaris, velas, velas aromaticas, almohadones, decoracion, home, deco, home and deco, contacto, contactanos, informacion, mail, telefono, horarios, instagram">
+    <title>Amaris-Contacto</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <h1 class="title"> AMARIS</h1>
+        <h2 class="subtitle">Home & Deco</h2>
+    </div>  
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active menu-principal">
+          <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active menu-principal">
+          <a class="nav-link" href="productos.html">Productos</a>
+          </li>
+          <li class="nav-item active menu-principal">
+          <a class="nav-link" href="inspo.html">Inspo</a>
+          </li>
+          <li class="nav-item active menu-principal">
+          <a class="nav-link" href="nosotros.html">Nosotros<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active menu-principal">
+          <a class="nav-link" href="contacto.html">Contacto<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+    <main role="main" class="container">
+        <div class="row">
+          <div class="col">
+            <div class="jumbotron">
+                <form action="gracias.html" method="POST" enctype="multipart/form-data">
+                    <fieldset >
+                        <legend>Formulario</legend>            
+                        <label for="Nombre">Nombre:</label><br>
+                        <input type="text"  id="Nombre"><br>
+                        <label for="Apellido">Apellido:</label><br>
+                        <input type="text"  id="Apellido"><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email"><br>
+                        <label>Sexo:</label>
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" name="genero" id="masculino" value="masculino">
+                        <label for="femenino">Femenino</label>
+                        <input type="radio" name="genero" id="femenino" value="femenino"><br>
+                        <label for="opcion_seleccion">Estado civil:</label>
+                        <select id="opcion_seleccion">
+                            <option selected="selected">Seleccione</option>
+                            <option value="soltero">Soltero/a</option>
+                            <option value="comprometido">Comprometido/a</option>
+                            <option value="casado">Casado/a</option>
+                            <option value="separado">Separado/a</option>
+                            <option value="divorciado">Divorciado/a</option>
+                            <option value="viudo">Viudo/a</option>
+                        </select>
+                        <label for="opcion1">Desea recibir el newsletter?</label>
+                        <input type="checkbox" id="opcion1" value="si">Si
+                        <br><br>
+                        <input class="btn" type="reset" name="Limpiar formulario" value="Limpiar formulario">    
+                        <input class="btn" type="submit" name="Enviar" value="Enviar">              
+                    </fieldset>
+                </form> 
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="container mt-4">
+        <div class="row">
+          <div class="col">
+            <p>Instagram:@amaris.deco</p>
+            <p>amaris.deco@gmail.com</p>
+            <p>1155555555</p>
+          </div>
+        </div>
+      </footer>
+    <script src="bootstrap/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

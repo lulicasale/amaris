@@ -1,0 +1,210 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	background-image: url("../images/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+header {
+	height: 360px;
+	background-image: url("../images/banner.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+a {
+	text-decoration: none;
+	color: white;
+	&:hover {
+		color: darkgoldenrod;
+		font-weight: 500;
+	}
+}
+h3 {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 25px;
+	text-align: center;
+	margin-top: 30px;
+}
+footer {
+	background-image: linear-gradient( to top, black, gray);
+	padding: 50px;
+	color: white;
+	text-align: center;
+	margin-top: 0px;
+	position: relative;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.container-form {
+	width: 400px;
+	margin: auto;
+	background-color: darkgoldenrod;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	padding: 10px;
+}
+.title {
+	font-size: 140px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: black;
+	margin: 0;
+}
+.subtitle {
+	font-size: 35px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	color: white;
+	text-decoration: overline darkgoldenrod;
+	margin: 0;
+}
+.barra-menu {
+	background-color: black;
+	opacity: 60%;
+	height: 50px;
+	position: absolute;
+	top: 310px;
+	width: 100%;
+}
+.nav-ul {
+	text-align: center;
+}
+.menu-principal {
+	text-align: center;
+	display: inline-block;
+	margin-left: 100px;
+	margin-right: 80px;
+	margin-top: 15px;
+}
+.container {
+	width: 1200px;
+	margin: auto;
+}
+.text-welcome {
+	text-align: justify;
+	color: black;
+	font-size: 17px;
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.tableborder {
+	text-align: center;
+	border: white 3px solid;
+	width: 1200px;
+	height: 130px;
+	background-color: darkgoldenrod;
+	margin-bottom: 50px;
+}
+.logo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.img-hijx {
+	width: 270px;
+	height: 270px;
+}
+.madre-flexbox-inspo {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 350px;
+	margin-top: 20px;
+}
+.hijx-flexbox-inspo {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	margin: 50px;
+}
+.madre-flexbox-nosotros {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 1200px;
+	height: 600px;
+	background-image: url("../images/dialogo.png");
+	background-repeat: no-repeat;
+	background-size: 1200px 600px;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+.hijx-flexbox-nosotros {
+	display: flex;
+	align-items: center;
+	text-align: justify;
+	margin: 50px;
+	margin-bottom: 200px;
+}
+#page-grids {
+	display: grid;
+	height: 250px;
+	grid-template-areas: "head"
+                         "section"
+                         "foot";
+	grid-template-rows: auto auto auto;
+	grid-template-columns: auto;
+	& > header {
+		grid-area: head;
+	}
+	& > section {
+		grid-area: section;
+	}
+	& > footer {
+		grid-area: foot;
+	}
+}
+.margin-grids {
+	margin-top: 120px;
+	margin-bottom: 50px;
+}
+.section-grids {
+	display: grid;
+	width: 100%;
+	grid-template-areas: "section section section section"
+                          "section section section section";
+	grid-template-rows: auto auto;
+	grid-template-columns: auto auto auto auto;
+	row-gap: 60px;
+	justify-items: center;
+	align-items: center;
+}
+.transicion-productos {
+	transition: width 0.5s, height 0.5s, transform 0.5s;
+	-webkit-transition: width 0.5s, height 0.5s, -webkit-transform 0.5s;
+	&:hover {
+		transform: scale(1.05);
+		-webkit-transform: scale(1.05);
+	}
+}
+.transicion-inspo {
+	transition: width 1s, height 1s, transform 1s;
+	-webkit-transition: width 1s, height 1s, -webkit-transform 1s;
+	&:hover {
+		transform: scale(1.3);
+		-webkit-transform: scale(1.3);
+	}
+}
+.transicion-contacto {
+	width: 173px;
+	height: 19px;
+	transition: all 1s;
+	&:focus {
+		width: 273px;
+		font-size: 20px;
+	}
+}
+.transicion-buton {
+	text-decoration: none;
+	&:hover {
+		background-color: lightgray;
+	}
+}
+.img-carusel {
+	width: 100%;
+}
